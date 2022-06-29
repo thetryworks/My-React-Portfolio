@@ -29,4 +29,32 @@ nav ul li {
   font-size: xx-large !important;
 }
 
+/*********************Header******************************/
+.header-wrapper {
+  position: relative;
+  background: url(header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-top: 150px;
+  padding-right: 175px;
+  text-align: right;
+}
+
+.main-info h1 {
+  font-size: 50px;
+}
+
+.main-info p {
+  font-size: 80px;
+  font-weight: 700;
+}
+
 
