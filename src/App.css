@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
 
 :root {
-  --primary-white: #fff
+  --primary-white: #fff;
+  --secondary: #f3a847;
 }
 body {
   font-family: "Anek Latin" sans-serif;
@@ -11,9 +12,11 @@ nav a.nav-link {
   font-weight: 500;
   letter-spacing: 0.6px;
   cursor: pointer;
-  
 }
 
+nav a.nav-link:hover {
+  color: #f3a847 !important;
+}
 nav ul li {
   text-transform: uppercase;
 }
@@ -29,6 +32,11 @@ nav ul li {
   font-size: xx-large !important;
 }
 
+.navActive {
+  color: var(--secondary);
+}
+
+
 /*********************Header******************************/
 .header-wrapper {
   position: relative;
@@ -41,7 +49,7 @@ nav ul li {
 .main-info {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: right;
   justify-content: center;
   padding-top: 150px;
   padding-right: 175px;
