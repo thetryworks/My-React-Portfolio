@@ -6,8 +6,10 @@
 }
 body {
   font-family: "Anek Latin" sans-serif;
+  
 }
 
+/*********************Navbar**************************/
 nav a.nav-link {
   font-weight: 500;
   letter-spacing: 0.6px;
@@ -32,8 +34,9 @@ nav ul li {
   font-size: xx-large !important;
 }
 
-
-
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+  border-top: 0.16rem solid var(--secondary);
+}
 
 /*********************Header******************************/
 .header-wrapper {
@@ -42,6 +45,9 @@ nav ul li {
   background-size: cover;
   background-position: center;
   height: 90vh;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 10px;
 }
 
 .main-info {
@@ -62,5 +68,24 @@ nav ul li {
   font-size: 80px;
   font-weight: 700;
 }
+/*********************About**************************/
+.section-titles {
+  margin-top: 50px;
+}
+
+
+/*********************Portfolio**************************/
+
+.portfolio-wrapper {
+  background: #f3a847;
+  padding: 2rem 0;
+}
+
+.section-titles {
+  scroll-margin-top: 2px;
+}
+
+
+
 
 
