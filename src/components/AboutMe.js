@@ -3,10 +3,10 @@ import React from 'react'
 const AboutMe = () => {
   return (
     <div id="about" className="about-wrapper">
-      <div className="container py-5">
+      <div className="container py-5 mb-4">
           <div className="row">
               <div className="text-uppercase text-center col-lg-12 col-xm-12">
-                  <h1 className="section-titles">About Me</h1>
+                  <h1 className="section-titles mb-3">About Me</h1>
                   <p>Lorem ipsum dolor sit amet.
                       A incidunt enim sed animi molestiae aut fuga provident a excepturi totam. 
                       Et tenetur eveniet est nihil optio qui quia nostrum? Sit sapiente illo id consequatur aliquam quo recusandae dolorem eos incidunt Quis. 

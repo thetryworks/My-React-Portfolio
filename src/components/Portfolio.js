@@ -3,8 +3,8 @@ import React from 'react'
 const Portfolio = () => {
   return (
     <div id="portfolio" className="portfolio-wrapper">
-        <div className="container">
-            <h1 className="section-titles text-uppercase text-center">Portfolio</h1>
+        <div className="container mb-5">
+            <h1 className="section-titles text-uppercase text-center mb-3">Portfolio</h1>
             <div className="row g-5 justify-content-center">
                 <div className="col-12 col-md-6 col-lg-4">
                     <div className="card">
