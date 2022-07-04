@@ -43,31 +43,46 @@ nav ul li {
   position: relative;
   background: url(header.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position:  center 10px;
   height: 90vh;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
   margin-top: 10px;
-}
-
-.main-info {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  justify-content: center;
-  padding-top: 150px;
-  padding-right: 175px;
-  text-align: right;
-}
-
-.main-info h1 {
-  font-size: 50px;
 }
 
 .main-info p {
   font-size: 80px;
   font-weight: 700;
 }
+
+.header-text {
+  padding-top: 30px;
+}
+.header-text h1 {
+  font-size: 70px;
+  text-align: right;
+  padding-right: 10px;
+}
+.header-text p {
+  font-size: 40px;
+  text-align: right;
+  padding-right: 10px
+}
+@media screen and (max-width: 768px) {
+  .header-text h1 {
+    font-size: 35px;
+    padding-top: -40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-text p {
+    font-size: 20px;
+  }
+}
+  
+
+  
+
 /*********************About**************************/
 .section-titles {
   margin-top: 50px;
