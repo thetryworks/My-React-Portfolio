@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone, faMapMarkerAlt, faEllipsisVertical, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faPhone, faMapMarkerAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 import { validateEmail } from '../utils/helpers';
 
@@ -40,10 +40,10 @@ function ContactForm() {
 
   return (
     
-<section className="mb-4 pa mx-4">
-    <h2 className="h1-responsive font-weight-bold text-center text-uppercase my-4">Contact Me</h2>
-    <p className="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
+<section id="contact" className="mb-4 pa mx-4">
+    <h2 className=" h1-responsive font-weight-bold text-center text-uppercase my-4 mt-5">Contact Me</h2>
+    <p className="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. I will get back to you within
+        24 hours.</p>
     <div className="row">
         <div className="col-lg-6 offset-lg-3">
             <form id="contact-form" onSubmit={handleSubmit}>
