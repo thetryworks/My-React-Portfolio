@@ -19,9 +19,9 @@ const Portfolio = () => {
                 link="https://github.com/mattparker124/lords-of-the-table" />
                 <Project 
                 img="https://images.freeimages.com/images/large-previews/91a/abstract-2-1564490.jpg"
-                title="Social Network API"
-                technologies="Javascript, Node, Mongoose, MongoDB, Express, Moment.js"
-                link="https://github.com/thetryworks/Social-Network-API" />
+                title="Net Pets"
+                technologies="Javascript, Node, GraphQl, MongoDB, Express, React"
+                link="https://github.com/GartTheSkeleton/NetPets" />
                 <Project 
                 img="https://images.freeimages.com/images/large-previews/a31/colorful-umbrella-1176220.jpg"
                 title="Employee Tracker"
