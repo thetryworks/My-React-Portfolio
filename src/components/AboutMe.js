@@ -7,15 +7,9 @@ const AboutMe = () => {
           <div className="row">
               <div className="text-uppercase text-center col-lg-12 col-xm-12">
                   <h1 className="section-titles mb-3">About Me</h1>
-                  <p>Lorem ipsum dolor sit amet.
-                      A incidunt enim sed animi molestiae aut fuga provident a excepturi totam. 
-                      Et tenetur eveniet est nihil optio qui quia nostrum? Sit sapiente illo id consequatur aliquam quo recusandae dolorem eos incidunt Quis. 
-                      Ea voluptatem natus qui unde minima nam molestiae galisum aut quis porro eos nesciunt quisquam. 
-                      Id fugit suscipit est eius reprehenderit qui officia voluptatibus aut veritatis sunt qui consectetur galisum et voluptatem voluptatem et libero quod.
-                      Et aspernatur sapiente hic error dolores quo excepturi aspernatur. 
-                      Ea similique nesciunt et dolorum cupiditate ut quasi eaque qui aperiam dolorem. 
-                      Non omnis nihil ut deleniti dolor et dolorem inventore aut omnis esse vel fugiat labore. 
-                      Est quis totam sed nisi accusantium qui saepe fugit.
+                  <p>I am a full stack web developer with an architectural and industrial design background building the best
+mobile-first, responsive user experiences on the web. By harnessing the most deadly skills in the tech industry: problem solving, communication, teamwork, attention to detail, and curiosity, I strive to be constantly learning new technologies to help my team accomplish anything.
+I recently completed a full stack web development course at Vanderbilt University and am currently enrolled at Nashville Software School studying UI/UX Product Design.
                   </p>
               </div>
           </div>
