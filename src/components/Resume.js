@@ -28,7 +28,7 @@ const Resume = () => {
                   <li class="list-group-item">GraphQL</li>
                 </ul>
               </div>
-              <a href="https://drive.google.com/file/d/1SANdk687ry3jZpjWU5jl6C-2rpO2CMTa/view?usp=sharing" download>Download My Resume</a>
+              <a href="https://docs.google.com/document/d/1E7EHWzcFE7cWVW7aNZomrYpVp5ahhiPHPgQmSflRwdg/edit?usp=sharing" download>Download My Resume</a>
             </div>
         </div>
     </div>
