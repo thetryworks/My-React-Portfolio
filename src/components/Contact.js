@@ -1,20 +1,28 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMapMarkerAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import emailjs from '@emailjs/browser';
 
 import { validateEmail } from '../utils/helpers';
 
 function ContactForm() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const [formState, setFormState] = useState({ name: '', email: '', subject: '', message: '' });
+  const form = useRef();
+  
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
+
+    emailjs.sendForm('gmail', 'template_s7sjo6o', form.current, 'eQ6SGPj5aQW5FPcN9')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset();
   };
 
   const handleChange = (e) => {
@@ -46,18 +54,26 @@ function ContactForm() {
         24 hours.</p>
     <div className="row">
         <div className="col-lg-6 offset-lg-3">
-            <form id="contact-form" onSubmit={handleSubmit}>
+            <form ref={form} id="contact-form" onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-md-6">
                         <div className="md-form mb-0">
-                            <input type="text" id="name" name="name" defaultValue={name} onBlur={handleChange} className="form-control"/>
+                            <input type="text" id="name" name="name" defaultValue={''} onBlur={handleChange} className="form-control"/>
                             <label for="name" className="">Your name</label>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="md-form mb-0">
-                            <input type="text" id="email" name="email" defaultValue={name} onBlur={handleChange} className="form-control"/>
+                            <input type="text" id="email" name="email" defaultValue={''} onBlur={handleChange} className="form-control"/>
                             <label for="email" className="">Your email</label>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="md-form mb-0">
+                            <input type="text" id="subject" name="subject" defaultValue={''} onBlur={handleChange} className="form-control md-textarea"></input>
+                            <label for="subject">Subject</label>
                         </div>
                     </div>
                 </div>
@@ -65,10 +81,13 @@ function ContactForm() {
                 <div className="row">
                     <div className="col-md-12">
                         <div className="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" defaultValue={name} onBlur={handleChange} className="form-control md-textarea"></textarea>
+                            <textarea type="text" id="message" name="message" rows="2" defaultValue={''} onBlur={handleChange} className="form-control md-textarea"></textarea>
                             <label for="message">Your message</label>
                         </div>
                     </div>
+                </div>
+                <div className="text-center text-md-left mb-3">
+                    <button className="btn btn-primary" type="submit" value='Send'>Submit</button>
                 </div>
             </form>
             {errorMessage && (
@@ -76,10 +95,7 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-            <div className="text-center text-md-left mb-3">
-                <button className="btn btn-primary" type= "submit">Submit</button>
-            </div>
-            <div className="status"></div>
+          <div className="status"></div>
         </div>
        <div className="col-md-3 text-center">
             <ul className="list-unstyled mb-0">
